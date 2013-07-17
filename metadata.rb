@@ -1,5 +1,5 @@
 name             'zprezto-user'
-maintainer       'Primož Verdnik'
+maintainer       'Primoz Verdnik'
 maintainer_email 'primoz.verdnik@gmail.com'
 license          'MIT'
 description      'Provides a simple definition for installing zprezto (zsh) for a given user'
