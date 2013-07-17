@@ -20,7 +20,6 @@ define :zprezto_user, :action => :create do
             execute "install #{home}/#{zfile}" do
                 cwd home
                 command "cp -pf #{home}/.zprezto/runcoms/#{zfile} #{home}/.#{zfile}"
-                not_if { ::File.exists?("#{home}/.#{zfile}")}
             end
         end  
     end    
