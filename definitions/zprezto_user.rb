@@ -16,10 +16,17 @@ define :zprezto_user, :action => :create do
             group params[:name]
         end
 
-        %w{ zshenv zshrc zlogin zlogout zpreztorc }.each do |zfile|
+        execute "install #{home}/zshrc" do
+            cwd home
+            command "cp -pf #{home}/.zprezto/runcoms/zshrc #{home}/.zshrc"
+            not_if "grep -c zprezto #{home}/.zshrc"
+        end
+
+        %w{ zshenv zlogin zlogout zpreztorc }.each do |zfile|
             execute "install #{home}/#{zfile}" do
                 cwd home
                 command "cp -pf #{home}/.zprezto/runcoms/#{zfile} #{home}/.#{zfile}"
+                not_if { ::File.exists?("#{home}/.#{zfile}")}
             end
         end  
     end    
