@@ -14,6 +14,8 @@ define :zprezto_user, :action => :create do
             not_if "test -d #{home}/.zprezto"
             user params[:name]
             group params[:name]
+            retry_delay 2
+            retries 3
         end
 
         execute "install #{home}/zshrc" do
