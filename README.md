@@ -25,10 +25,11 @@ end
 Attributes
 ----------
 
-The only attribute is:
+Default attributes:
 
 ```ruby
 node['zprezto-user']['repository']  # zprezto repository (default: https://github.com/sorin-ionescu/prezto.git) 
+node['zprezto-user']['reference']   # zprezto repository reference revision sha1 (default: master) 
 ```
 
 Contributing

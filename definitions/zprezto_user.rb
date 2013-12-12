@@ -9,7 +9,7 @@ define :zprezto_user, :action => :create do
 
         git "#{home}/.zprezto" do
             repository node['zprezto-user']['repository']
-            reference "master"
+            reference node['zprezto-user']['reference']
             action :checkout
             not_if "test -d #{home}/.zprezto"
             user params[:name]
