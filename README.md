@@ -1,4 +1,3 @@
-@charset "UTF-8";
 Zprezto-user Cookbook
 ================
 Provides a simple definition for installing zsh for specific users
