@@ -39,4 +39,4 @@ Make a pull request
 
 License and Authors
 -------------------
-Authors: Primož Verdnik
+Authors: Primoz Verdnik
