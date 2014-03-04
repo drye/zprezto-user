@@ -17,3 +17,7 @@ This file is used to list changes made in each version of zprezto-user.
 ## 0.1.4:
 
 * Removed funky chars
+
+## 0.1.5:
+
+* Fixed a char definition bug
