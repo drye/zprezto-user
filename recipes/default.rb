@@ -1,4 +1,4 @@
-@charset "UTF-8";
+#@charset "UTF-8";
 #
 # Cookbook Name:: zprezto-user
 # Recipe:: default
